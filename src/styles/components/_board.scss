@@ -1,0 +1,33 @@
+.board {
+    display: grid;
+    position: relative;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    //column-gap: 10px;
+    //margin-top: 20px;
+    height: 500px;
+    background: transparent;
+    justify-content: center;
+    align-content: center;
+
+    & .cell {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        //margin: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        background-color: #868383;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #e0e0e0;
+        }
+    }
+
+    //.cell--winner {
+    //    background-color: #b3ffb3;
+    //}
+}

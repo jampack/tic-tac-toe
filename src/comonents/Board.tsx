@@ -12,10 +12,13 @@ const Board = () => {
 
     useEffect(() => {
         const winner = calculateWinner();
+
+        // to let the user see the last move before the alert
         setTimeout(() => {
             if (winner) {
                 alert(`Player ${winner} wins!`);
                 setBoard(boardInitialState);
+                return;
             }
             if (checkDraw()) {
                 alert('Draw!');
